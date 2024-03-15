@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     display: flex;
     align-items: center;
@@ -80,7 +84,7 @@ button:active{
 /* mainpage */
 .mainpage{
     width: 1440px;
-    height: 6725px;
+    height: max-content;
     padding: 70px;
     background-color: #0b0b0c;
 }
@@ -90,7 +94,7 @@ button:active{
 
 /* home */
 .home{
-    height: 6725px;
+    height: max-content;
 }
 
 
@@ -760,4 +764,15 @@ transform: translateY(4px);
 
 .imgAddress{
     padding-right: 20px;
+}
+
+.modal-content {
+    background-color: #151515;
+    color: #fff;
+}
+
+.form-control {
+    color: #495057;
+    background-color: black;
+    border: 1px solid #383439;
 }
