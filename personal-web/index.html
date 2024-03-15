@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal web</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
@@ -20,13 +22,11 @@
         
                     <div class="menu">About</div>
         
-        
-                    <div class="menu">Project</div>
-        
+                    <a href="#projects"><div class="menu">Project</div></a>
         
                     <div class="menu">Blog</div>
         
-                    <button class="myButton" type="button">Contact Me</button>
+                    <a href="#contactme"><button class="myButton" type="button">Contact Me</button></a>
                     
                 </div>
                     
@@ -191,7 +191,7 @@
     </div>
 
     <!-- My Project Section -->
-    <div class="myProject">
+    <div class="myProject" id="projects" name="projects">
 
         <div class="upProject">
 
@@ -232,7 +232,7 @@
     </div>
 
     <!-- Offering section -->
-    <div class="Offering">
+    <div class="Offering" id="contactme" name="contactme">
 
         <div class="leftOffer">
 
@@ -244,9 +244,9 @@
 
         <div class="rightOffer">
 
-            <button class="buttonHello1"  type="button"><img src="./images/Vector (2).svg" alt="" class="iconHello">Email Me</button>
+            <button class="buttonHello1"  type="button" data-bs-toggle="modal" data-bs-target="#EmailModal"><img src="./images/Vector (2).svg" alt="" class="iconHello">Email Me</button>
 
-            <button class="buttonHello2" type="button">More Projects</button>
+            <a href="#projects"><button class="buttonHello2" type="button">More Projects</button></a>
 
         </div>
     </div>
@@ -440,5 +440,33 @@
 
     </div>
     
+    <!-- Modal Codes -->
+    <div class="modal fade" id="EmailModal" tabindex="-1" aria-labelledby="EmailModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Send Email</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">Email:</label>
+                  <input type="email" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                  <label for="message-text" class="col-form-label">Message:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn buttonHello2" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn buttonHello1">Send message</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
 </body>
 </html>
