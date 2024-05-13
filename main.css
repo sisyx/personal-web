@@ -1,0 +1,763 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-weight: bold;
+    background-color: #0b0b0c;
+}
+
+button:active{
+    transform: translateY(4px);
+}
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+/* Navbar */
+.nav{
+    width: 1580px;
+}
+
+.navigation{
+    background-color: #0F0F0F;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menuNav{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    padding: 18px;
+}
+
+.menu:hover{
+    color: #7456FF;
+}
+
+.menu:active{
+    transform: translateY(4px);
+}
+
+.myButton {
+    background-color: transparent; /* پس زمینه شفاف */
+    color: #7456FF; /* رنگ متن */
+    padding: 15px 25px; /* فاصله داخلی دکمه */
+    text-align: center; /* مرکز چین کردن متن */
+    text-decoration: none; /* حذف خط زیر خط متن */
+    display: inline-block; /* نمایش به عنوان بلوک مستطیل */
+    font-size: 18px; /* اندازه فونت */
+    font-weight: bold;
+    margin: 10px; /* حاشیه */
+    border: 2px solid #7456FF; /* حاشیه خطی با رنگ مشخص */
+    border-radius: 5px; /* شکل گرد لبه‌ها */
+}
+
+.myButton:hover {
+    background-color: #7456FF; /* تغییر رنگ پس زمینه هنگام هاور */
+    color: white; /* تغییر رنگ متن هنگام هاور */
+}
+
+.myButton:active{
+    transform: translateY(3px);
+}
+
+.logo{
+    width: 150px; /* تنظیم عرض لوگو */
+    height: auto; /* ارتفاع خودکار بر اساس نسبت */
+}
+
+
+/* ////////////////////////////////////////////////////////////////// */
+
+/* mainpage */
+.mainpage{
+    width: 1440px;
+    height: 6725px;
+    padding: 70px;
+    background-color: #0b0b0c;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////// */
+
+/* home */
+.home{
+    height: 6725px;
+}
+
+
+/* Hello Section */
+.Hello{
+    width: 100%;
+    height: 709px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftHello{
+    width: 60%;
+}
+
+.titleHello{
+color: #FFFFFF;
+font-size: 1.4rem;
+font-weight: bold;
+
+}
+
+.purple-text {
+    color: #7456FF;
+    font-size: 2rem;
+    font-weight: bold;
+
+  }
+
+  .white-text {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+
+  }
+.descriptionHello{
+    color: #999999;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.lineHello{
+    
+    border-top: 1px solid #999999; /* ایجاد خط با ارتفاع 1 پیکسل و رنگ مشخص */
+    margin: 20px 0; /* حاشیه از بالا و پایین برای جدایی بهتر */
+
+}
+
+.descriptionHello2{
+    color: #999999;
+    font-size: 1.5rem;
+    padding: 15px 0;
+}
+
+.buttonHello{
+    padding-top: 15px;
+    display: flex;
+    gap: 27px;
+}
+
+.buttonHello1{
+    background-color: #7456FF; /* پس زمینه شفاف */
+    color: #FFF; /* رنگ متن */
+    padding: 15px 25px; /* فاصله داخلی دکمه */
+    text-align: center; /* مرکز چین کردن متن */
+    text-decoration: none; /* حذف خط زیر خط متن */
+    display: inline-block; /* نمایش به عنوان بلوک مستطیل */
+    font-size: 18px; /* اندازه فونت */
+    font-weight: bold;
+    border: 2px solid #7456FF; /* حاشیه خطی با رنگ مشخص */
+    border-radius: 5px; /* شکل گرد لبه‌ها */
+}
+
+.buttonHello1:hover{
+    background-color: transparent; /* پس زمینه شفاف */
+    color: #fff; /* رنگ متن */
+    border: 2px solid #fff; /* حاشیه خطی با رنگ مشخص */
+
+}
+
+.iconHello{
+    padding: 0 7px;
+    padding-top: 2px;
+}
+
+
+.buttonHello2{
+    background-color: transparent; /* پس زمینه شفاف */
+    color: #fff; /* رنگ متن */
+    padding: 15px 25px; /* فاصله داخلی دکمه */
+    text-align: center; /* مرکز چین کردن متن */
+    text-decoration: none; /* حذف خط زیر خط متن */
+    display: inline-block; /* نمایش به عنوان بلوک مستطیل */
+    font-size: 18px; /* اندازه فونت */
+    font-weight: bold;
+    border: 2px solid #fff; /* حاشیه خطی با رنگ مشخص */
+    border-radius: 5px; /* شکل گرد لبه‌ها */
+}
+
+.buttonHello2:hover{
+    color: #fff; /* رنگ متن */
+    background-color: #7456FF;
+}
+
+
+.rightHello{
+    width: 40%;
+}
+
+.imageHello{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.downHello{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.iconHello2{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #7456ff21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconHello2:hover{
+    background-color: #e4dcdc;
+}
+
+.iconHello2:active{
+transform: translateY(4px);
+}
+
+.textHello{
+    color: #FFF;
+    font-weight: bold;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+/* Service Section */
+
+.service{
+    height: 804.5px;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.upService{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.titleService{
+    color: #707070;
+    font-size: 1.4rem;
+    font-weight: bold;
+
+}
+
+.textService{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding-bottom: 20px;
+
+}
+
+.downService{
+    height: 546.5px;
+}
+
+.contentService{
+   padding: 40px 0px;
+
+}
+
+.bluryService{
+    width: 100%;
+    height: 484px;
+    background-color: #151515ed;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.cartServiceOrg{
+    width: 364px;
+    height: 364px;
+    background-color: #7556ff22;
+    border: 2px solid #7456FF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cartService{
+    width: 364px;
+    height: 364px;
+    background-color: #7556ff22;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.descriptionService{
+    color: #7456FF;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+
+.slideService{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.lineSlide{
+    width: 60px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: #999999;
+}
+
+.lineSlideOrg{
+    width: 60px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: #7456FF;
+}
+
+.iconSlide1{
+    padding: 0 15px;
+}
+
+.iconSlide2{
+    padding: 0 15px;
+}   
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Count */
+
+.secCount{
+    padding: 70px 0;
+}
+.count{
+    background-image: url("./images/Background-Port.svg");
+    width: 100%;
+    height: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.countCard{
+    width: 255px;
+    height: 223px;
+    background-color: #151515;
+    border-radius: 5px;
+    border: 3px dashed #ffffff72;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.numberCount{
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.textCount{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* My Project */
+
+.myProject{
+    width: 100%;
+    height: 1237px;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    background-image: url("./images/MY\ PROJECT.svg");
+    background-position:center top 50px; /* عکس 10px به پایین تغییر مکان داده شود */
+
+    background-repeat: no-repeat;
+}
+
+.upProject{
+    padding: 30px 0;
+}
+
+.titleProject{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.cardProject{
+    width: 1260px;
+    height: 280px;
+    background-color: #151515;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 167px;
+}
+
+.imageProject{
+    border-radius: 15px;
+
+}
+
+.imageProject:hover{
+    transform: translateY(3px);
+}
+
+/* ////////////////////////////////////////////////////////////////// */
+
+/* Offering */
+
+.Offering{
+    width: 100%;
+    height: 180px;
+    background-color: #151515;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftOffer{
+    width: 50%;
+    padding-left: 50px;
+}
+
+.titleOffer{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.textOffer{
+    color: #999999;
+    font-size: 1.3rem;
+}
+
+.rightOffer{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding-right: 50px;
+}
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Hire */
+
+.hire{
+    background-image: url("./images/WHY\ HIRE\ ME.svg");
+    background-repeat: no-repeat;
+    background-position:center top 150px; /* عکس 10px به پایین تغییر مکان داده شود */
+
+    width: 100%;
+    height: 730px;
+    padding: 70px 0;
+}
+
+.titleHire{
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 90px;
+}
+
+.contentHire{
+    display: flex;
+}
+
+.cardHire{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imageHire{
+    width: 238px;
+    height: 238px;
+    background-image: url("./images/Group\ 1.svg");
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textHire{
+    color: #FFF;
+    font-size: 2rem;
+    padding-top: 20px;
+
+}
+
+.descriptionHire{
+    color: #999999;
+    font-size: 1.3rem;
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Testimonials */
+
+.testimonials{
+    width: 100%;
+    height: 534px;
+    padding: 70px 0;
+}
+
+.upTest{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.sliderTest{
+    width: 100%;
+    height: 300px;
+    background-color: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+}
+
+.menuTest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+
+.titleTest{
+    color: #999999;
+    font-size: 1.5rem;
+}
+
+.textTest{
+    color: #FFF;
+    font-size: 2.5rem;
+    padding-bottom: 125px;
+
+}
+
+.contentTest{
+    width: 618px;
+}
+
+.imgSecTest{
+    width: 396px;
+    height: 271px;
+    border-radius: 15px;
+    background-color: #1d1d1d;
+    position: relative;
+    bottom: 45px;
+}
+
+.imageTest{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentTest{
+
+}
+
+.desTest{
+    color: #999999;
+    font-size: 1.2rem;
+}
+
+.nameTest{
+    color: #7456FF;
+    font-size: 1.5rem;
+    padding: 25px 0;
+}
+
+.jopTest{
+    color: #999999;
+    font-size: 1.2rem;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Skills */
+
+.skill{
+    width: 100%;
+    height: 450px;
+    padding: 100px 0;
+    background-image: url("./images/TOOLS\ AND\ SKILLS.svg");
+    background-repeat: no-repeat;
+    background-position:center top 50px; /* عکس 10px به پایین تغییر مکان داده شود */}
+
+.titleSkill{
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    padding-bottom: 86px;
+}
+
+.contentSkill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.cartSkill{
+    width: 182px;
+    height: 182px;
+    background-image: url("./images/Rectangle\ 19.svg");
+    background-repeat: no-repeat;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Footer */
+
+.footer{
+    width: 100%;
+    height: 496px;
+    padding-top: 100px;
+    background-color: #101010;
+    display: flex;
+    justify-content: center;
+    gap: 350px;
+}
+
+.contentFooter{
+    width: 503px;
+    height: 316px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.titleFooter{
+    color: #FFF;
+    font-size: 3rem;
+}
+
+.descriptionFooter{
+    color: #999999;
+    font-size: 1.2rem;
+    padding: 15px 0;
+}
+
+.phoneFooter{
+    display: flex;
+    align-items: center;
+}
+
+.imgPhone{
+
+}
+
+.textPhone{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titlePhone{
+    color: #999999;
+    font-size: 1.2rem;
+}
+
+.descriptionPhone{
+    color: #FFF;
+    font-size: 1.3rem;
+}
+
+.emailFooter{
+    display: flex;
+        align-items: center;
+}
+
+.textEmail{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.addressFooter{
+    display: flex;
+    align-items: center;
+}
+
+.imgAddress{
+    background-image: url("./images/Rectangle\ 22.svg");
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.textAddress{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.imageFooter{
+
+}
+
+.img{
+    padding-right: 20px;
+}
+
+.imgAddress{
+    padding-right: 20px;
+}
