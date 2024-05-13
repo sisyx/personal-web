@@ -1,0 +1,6 @@
+* {
+    transition: all 150ms;
+}
+:root {
+    --primary-color: #7456FF;
+}

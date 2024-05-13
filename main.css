@@ -15,16 +15,18 @@ button:active{
 /* /////////////////////////////////////////////////////////////////////////////// */
 /* Navbar */
 .nav{
-    width: 1580px;
+    width: 100vw;
+    max-width: 1440px;
 }
 
-.navigation{
+.navigation {
     background-color: #0F0F0F;
     width: 100%;
     height: 140px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    text-transform: uppercase;
 }
 
 .menuNav{
@@ -36,10 +38,11 @@ button:active{
     color: #FFFFFF;
     font-size: 1.5rem;
     padding: 18px;
+    cursor: pointer;
 }
 
 .menu:hover{
-    color: #7456FF;
+    color: var(--primary-color);
 }
 
 .menu:active{
@@ -48,20 +51,20 @@ button:active{
 
 .myButton {
     background-color: transparent; /* پس زمینه شفاف */
-    color: #7456FF; /* رنگ متن */
+    color: var(--primary-color); /* رنگ متن */
     padding: 15px 25px; /* فاصله داخلی دکمه */
     text-align: center; /* مرکز چین کردن متن */
     text-decoration: none; /* حذف خط زیر خط متن */
     display: inline-block; /* نمایش به عنوان بلوک مستطیل */
     font-size: 18px; /* اندازه فونت */
-    font-weight: bold;
+    /* font-weight: bold; */
     margin: 10px; /* حاشیه */
-    border: 2px solid #7456FF; /* حاشیه خطی با رنگ مشخص */
-    border-radius: 5px; /* شکل گرد لبه‌ها */
+    border: 1px solid var(--primary-color); /* حاشیه خطی با رنگ مشخص */
+    text-transform: uppercase;
 }
 
 .myButton:hover {
-    background-color: #7456FF; /* تغییر رنگ پس زمینه هنگام هاور */
+    background-color: var(--primary-color); /* تغییر رنگ پس زمینه هنگام هاور */
     color: white; /* تغییر رنگ متن هنگام هاور */
 }
 
@@ -107,15 +110,14 @@ button:active{
     width: 60%;
 }
 
-.titleHello{
-color: #FFFFFF;
-font-size: 1.4rem;
-font-weight: bold;
-
+.titleHello {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
 
 .purple-text {
-    color: #7456FF;
+    color: var(--primary-color);
     font-size: 2rem;
     font-weight: bold;
 
@@ -153,7 +155,7 @@ font-weight: bold;
 }
 
 .buttonHello1{
-    background-color: #7456FF; /* پس زمینه شفاف */
+    background-color: var(--primary-color); /* پس زمینه شفاف */
     color: #FFF; /* رنگ متن */
     padding: 15px 25px; /* فاصله داخلی دکمه */
     text-align: center; /* مرکز چین کردن متن */
@@ -161,7 +163,7 @@ font-weight: bold;
     display: inline-block; /* نمایش به عنوان بلوک مستطیل */
     font-size: 18px; /* اندازه فونت */
     font-weight: bold;
-    border: 2px solid #7456FF; /* حاشیه خطی با رنگ مشخص */
+    border: 2px solid var(--primary-color); /* حاشیه خطی با رنگ مشخص */
     border-radius: 5px; /* شکل گرد لبه‌ها */
 }
 
@@ -193,7 +195,7 @@ font-weight: bold;
 
 .buttonHello2:hover{
     color: #fff; /* رنگ متن */
-    background-color: #7456FF;
+    background-color: var(--primary-color);
 }
 
 
@@ -217,7 +219,7 @@ font-weight: bold;
     width: 50px;
     height: 50px;
     border-radius: 100%;
-    background-color: #7456ff21;
+    background-color: var(--primary-color)21;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -293,7 +295,7 @@ transform: translateY(4px);
     width: 364px;
     height: 364px;
     background-color: #7556ff22;
-    border: 2px solid #7456FF;
+    border: 2px solid var(--primary-color);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -314,7 +316,7 @@ transform: translateY(4px);
 
 
 .descriptionService{
-    color: #7456FF;
+    color: var(--primary-color);
     font-size: 2rem;
     font-weight: bold;
 }
@@ -338,7 +340,7 @@ transform: translateY(4px);
     width: 60px;
     height: 10px;
     border-radius: 100px;
-    background-color: #7456FF;
+    background-color: var(--primary-color);
 }
 
 .iconSlide1{
@@ -613,7 +615,7 @@ transform: translateY(4px);
 }
 
 .nameTest{
-    color: #7456FF;
+    color: var(--primary-color);
     font-size: 1.5rem;
     padding: 25px 0;
 }
