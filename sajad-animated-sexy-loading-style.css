@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+    --knife-animation-duration: 6s;
+}
+.sajad-animated-background-nopropretaty-software-is-allowed-for-us-container {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10000000000000000000;
+}
+.sajad-animated-background-nopropretaty-software-is-allowed-for-us-box-owner {
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 90vw;
+    height: 50vw;
+    max-width: 700px;
+    max-height: 393px;
+    /* border: 2px white solid; */
+    background-color: #ccc;
+}
+.sajad-animated-background-nopropretaty-software-is-allowed-for-us-boom {
+    max-width: unset;
+    max-height: unset;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    animation: boom 500ms 1 linear;
+}
+@keyframes boom {
+    /* 1% {
+        transform: translate(-50%, 50%) scale(1);   
+    }
+    12% {
+        transform: translate(-50%, 50%) scale(0.5);
+    } */
+    25% {
+        transform: translate(-50%, 50%) scale(1.5);    
+    }
+    50% {
+        transform: translate(-50%, 50%) scale(2);
+        opacity: 0.6;
+    }
+    75% {
+        transform: translate(-50%, 50%) scale(2.5);
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0.1;
+        transform: translate(-50%, 50%) scale(2.5);
+    }
+}
+.sajad-animated-background-nopropretaty-software-is-allowed-for-us-box {
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background-color: #333;
+    width: 90vw;
+    height: 50vw;
+    max-width: 700px;
+    max-height: 393px;
+    border: 2px #0000 solid;
+    animation: skewbox var(--knife-animation-duration) linear 1;
+}
+@keyframes skewbox {
+    24% {
+        border-top: 2px #ffff solid;
+    }
+    25% {
+        border-top: 2px #ccc dashed;
+    }
+    49% {
+        border-right: 2px #ffff solid;
+    }
+    50% {
+        border-right: 2px #ccc dashed;
+    }
+    74% {
+        border-bottom: 2px #ffff solid;
+    }
+    75% {
+        border-bottom: 2px #ccc dashed;
+    }
+    99% {
+        border-left: 2px #ffff solid;
+    }
+    100% {
+        border: 2px #ccc dashed;
+    }
+}
+.sajad-animated-background-nopropretaty-software-is-allowed-for-us-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sajad-animated-background-nopropretaty-software-is-allowed-for-us-animated-letter {
+    --color: #fff;
+    display: inline-block;
+    font-size: 3rem;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    color: var(--color);
+    text-shadow: 0 0 5px var(--color);
+    animation: animate-letter var(--knife-animation-duration) ease-in-out infinite;
+    transition: all 150ms;
+}
+@keyframes animate-letter { 
+    /* 1% {
+        color: #990;
+    } */
+    25% {
+        color: #009;
+        text-shadow: 0 0 5px #009;
+    }
+    50% {
+        color: #090;
+        text-shadow: 0 0 5px #090;
+    }
+    75% {
+        color: #900;
+        text-shadow: 0 0 5px #900;
+    }
+    100% {
+        color: #990;
+        text-shadow: 0 0 5px #990;
+    }
+}
+.sajad-animated-background-nopropretaty-software-is-allowed-for-us-knife {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: cutit var(--knife-animation-duration) linear 1;
+}
+.sajad-animated-background-nopropretaty-software-is-allowed-for-us-knife-img {
+    width: 50px;
+}
+@keyframes cutit {
+    25% {
+        left: 100%;
+        top: 0;
+    }
+    50% {
+        top: 100%;
+        left: 100%;
+    }
+    75% {
+        top: 100%;
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+.sajad-animated-background-nopropretaty-software-is-allowed-for-us-fall-out {
+    transition: bottom 3s, rotate 2s;
+    rotate: 45deg;
+    bottom: -1000%;
+    /* animation: fallout 1 3s linear; */
+}
+
+@keyframes fallout {
+    2% {
+        transform: translate(-50%, 50%) rotate(1deg);
+    }
+    /* 4% {
+        transform: translate(-50%, 50%) rotate(-1deg);
+    }
+
+    6% {
+        transform: translate(-50%, 50%) rotate(3deg);
+    }
+    8% {
+        transform: translate(-50%, 50%) rotate(-3deg);
+    }
+
+    10% {
+        transform: translate(-50%, 50%) rotate(7deg);
+    }
+    12% {
+        transform: translate(-50%, 50%) rotate(-7deg);
+    } */
+    25% {
+        bottom: 40%;
+    }
+    50% {
+        bottom: 30%;
+    }
+}

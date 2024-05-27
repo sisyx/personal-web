@@ -22,11 +22,12 @@ button:active{
 .navigation {
     background-color: #0F0F0F;
     width: 100%;
-    height: 140px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-transform: uppercase;
+    padding-top: 28px;
+    padding-bottom: 28px;
 }
 
 .menuNav{
@@ -82,32 +83,38 @@ button:active{
 
 /* mainpage */
 .mainpage{
-    width: 1440px;
-    height: 6725px;
-    padding: 70px;
+    width: 99vw;
+    max-width: 1440px;
+    padding: 70px 0;
     background-color: #0b0b0c;
 }
 
 
 /* /////////////////////////////////////////////////////////////////////////////// */
 
-/* home */
-.home{
-    height: 6725px;
-}
-
 
 /* Hello Section */
 .Hello{
-    width: 100%;
-    height: 709px;
+    /* width: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 50px 0;
+    gap: 20px;
+    position: relative;
 }
 
+@media (max-width: 1000px) {
+    .Hello {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+}
 .leftHello{
-    width: 60%;
+    flex: 1;
+    z-index: 1;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .titleHello {
@@ -165,6 +172,9 @@ button:active{
     font-weight: bold;
     border: 2px solid var(--primary-color); /* حاشیه خطی با رنگ مشخص */
     border-radius: 5px; /* شکل گرد لبه‌ها */
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .buttonHello1:hover{
@@ -200,7 +210,9 @@ button:active{
 
 
 .rightHello{
-    width: 40%;
+    width: 95vw;
+    max-width: 430px;
+    z-index: 1;
 }
 
 .imageHello{
@@ -763,3 +775,147 @@ transform: translateY(4px);
 .imgAddress{
     padding-right: 20px;
 }
+
+
+
+
+/* making header responsive */
+@media (max-width: 1000px) {
+    .large {
+        display: none;
+    }
+}
+@media (min-width: 1000px) {
+    .medium {
+        display: none;
+    }
+}
+@media (max-width: 800px) {
+    .medium {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) {
+    .medium- {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .medium- {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) {
+    .small {
+        display: none;
+    }
+}
+
+.hamburger-menu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #222;
+    z-index: 100;
+}
+.hamburger-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hamburger-icon-img {
+    width: 30px;
+    height: 30px;
+    color: var(--primary-color);
+}
+.hamburger-hiddens {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: scale(0);
+    background-color: #222;
+    transition: all 500ms;
+}
+.hamburger-menu:hover .hamburger-hiddens {
+    transform: scale(1);
+    transition: all 150ms;
+}
+.hamburger-menu:hover .hamburger-icon-img {
+    color: white;
+}
+
+
+
+
+.Hello_wave {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #3E606F;
+    font-family: Roboto;
+    overflow: hidden;
+    z-index: 0;
+  }
+  .Hello_wave:before, .Hello_wave:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    min-width: 300vw;
+    min-height: 300vw;
+    background-color: #0b0b0c;
+    -webkit-animation-name: rotate;
+            animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    /* z-index: -10; */
+  }
+  .Hello_wave:before {
+    bottom: 15vh;
+    border-radius: 45%;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+  }
+  .Hello_wave:after {
+    bottom: 12vh;
+    opacity: 0.5;
+    border-radius: 47%;
+    -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+  }
+  
+  @-webkit-keyframes rotate {
+    0% {
+      transform: translate(-50%, 0) rotateZ(0deg);
+    }
+    50% {
+      transform: translate(-50%, -2%) rotateZ(180deg);
+    }
+    100% {
+      transform: translate(-50%, 0%) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, 0) rotateZ(0deg);
+    }
+    50% {
+      transform: translate(-50%, -2%) rotateZ(180deg);
+    }
+    100% {
+      transform: translate(-50%, 0%) rotateZ(360deg);
+    }
+  }
